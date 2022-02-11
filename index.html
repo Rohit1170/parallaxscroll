@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <a href="#" class="logo">ICON</a>
+         <ul>
+             <li><a href="#">home</a></li>
+             <li><a href="#">about</a></li>
+             <li><a href="#">contact</a></li>
+             <li><a href="#">fcuk</a></li>
+         </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        
+        <img src="mountains_behind.png" id="mountB">
+        <h1 id="text">WELCOME!!!</h1>
+        <img src="mountains_front.png" id="mountF">
+        
+    </section>
+    <div class="inf">
+        <h2>INFO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat labore magnam vel quos voluptates ratione minus recusandae corrupti. Nihil soluta eligendi enim nesciunt dolorem culpa possimus ipsum molestiae doloremque, dolores, eum laboriosam alias, maiores perferendis voluptatum. Temporibus veritatis commodi quia nulla fugit nemo aliquid reprehenderit facere! Sapiente quos minus ex architecto amet velit eum nobis obcaecati quod, aliquid rem in ratione maiores magni earum omnis quaerat fugit aspernatur nemo iure molestias reiciendis aut impedit! Voluptates labore temporibus neque quo vero ad pariatur, corporis, doloremque earum eaque maxime, sint unde! Eligendi provident maxime laudantium atque rem, temporibus blanditiis sit nemo?
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ratione ut exercitationem eos ex. Fuga quasi voluptas deserunt maxime? Eius modi, accusantium excepturi debitis ut doloremque dolorem nulla labore laborum aliquid aperiam eaque pariatur, nobis sint numquam culpa itaque expedita quia incidunt facilis. Numquam, aut. Eveniet, dolores nemo? Voluptatem quia sed ea iusto, quae itaque harum molestias. Ipsa, eius odit! Maxime nam facere modi sit dolores fuga, laborum suscipit nobis porro deleniti cum voluptatibus libero itaque nemo totam consequuntur tempora molestiae excepturi! Sed quos possimus repellat error, neque quidem, quae ut exercitationem, iste pariatur laudantium sequi nobis? Neque, sequi quaerat.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsum ut, ratione veniam vitae ipsa cumque nulla, ad iure earum odit sit, iusto excepturi aperiam similique nihil velit impedit eius. Esse aperiam quae nemo dolores consequatur mollitia in eaque, dolorem asperiores nulla ullam voluptatem sint facere quo possimus modi! Unde, labore cumque illum deserunt sunt aspernatur sapiente quia culpa officiis expedita consectetur voluptatibus esse voluptas harum accusamus, repellat et ipsam. Voluptate nostrum illo, necessitatibus minima cupiditate perferendis rerum modi dolorum odit doloremque, quam temporibus unde animi quos. Quisquam ullam, possimus modi, omnis sunt sint quia sit at quaerat ipsam voluptatem.
+            <br>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima molestiae illum, et nostrum voluptate, qui a tempore vero labore recusandae quibusdam, consequuntur nesciunt praesentium. Numquam rerum modi praesentium cum quaerat rem repudiandae nisi quia consequatur, aliquid ab sed illo soluta fugit reiciendis? Dicta deleniti vero optio vitae error in!
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountB = document.getElementById('mountB');
+        let mountF = document.getElementById('mountF');
+        let text = document.getElementById('text');
+        let header = document.getElementById('header')
+
+        window.addEventListener('scroll', function(){
+            let value=window.scrollY;
+            stars.style.left= value*0.25+'px';
+            moon.style.top=value*1.5 +'px';
+            mountB.style.top=value*0.6 +'px';
+            mountF.style.top=value*0+'px';
+            text.style.marginRight=value*3 +'px';
+            header.style.Top=value*0.5 + 'px';
+        }
+        )
+    </script>
+</body>
+</html>
